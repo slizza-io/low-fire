@@ -1,0 +1,13 @@
+{
+  "lowfire": {
+    "settings": {
+      "name": "Low Fire",
+      "enabled": {
+        "name": "Enabled"
+      },
+      "fireOffset": {
+        "name": "Offset"
+      }
+    }
+  }
+}

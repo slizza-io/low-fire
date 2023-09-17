@@ -4,19 +4,19 @@ plugins {
     id("net.labymod.gradle.addon")
 }
 
-group = "org.example"
+group = "io.slizza"
 version = "1.0.0"
 
 java.toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 
 labyMod {
-    defaultPackageName = "org.example" //change this to your main package name (used by all modules)
+    defaultPackageName = "io.slizza.lowfire"
     addonInfo {
-        namespace = "example"
-        displayName = "ExampleAddon"
-        author = "Example Author"
-        description = "Example Description"
-        minecraftVersion = "*"
+        namespace = "lowfire"
+        displayName = "Low Fire"
+        author = "SLIZZA"
+        description = "Lowers the fire overlay on the screen when the player is on fire in first person."
+        minecraftVersion = "1.8.9<1.20.1"
         version = System.getenv().getOrDefault("VERSION", "0.0.1")
     }
 
