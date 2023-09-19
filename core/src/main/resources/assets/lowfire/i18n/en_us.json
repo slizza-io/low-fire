@@ -5,8 +5,8 @@
       "enabled": {
         "name": "Enabled"
       },
-      "fireOffset": {
-        "name": "Offset"
+      "fireSize": {
+        "name": "Fire Size"
       }
     }
   }

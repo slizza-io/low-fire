@@ -11,11 +11,11 @@ public class LowFireConfiguration extends AddonConfig {
 
   @SwitchSetting
   private final ConfigProperty<Boolean> enabled = new ConfigProperty<>(true);
-  @SliderSetting(steps=0.05F, min=0, max=0.4F)
-  private final ConfigProperty<Float> fireOffset = new ConfigProperty<>(0.3F);
+  @SliderSetting(steps=0.05F, min=0, max=1F)
+  private final ConfigProperty<Float> fireSize = new ConfigProperty<>(0.25F);
 
-  public ConfigProperty<Float> getFireOffset() {
-    return fireOffset;
+  public ConfigProperty<Float> getFireSize() {
+    return fireSize;
   }
 
   @Override
