@@ -3,7 +3,7 @@ package io.slizza.lowfire.v1_20_2.mixins;
 import com.mojang.blaze3d.vertex.PoseStack;
 import io.slizza.lowfire.LowFireAddon;
 import io.slizza.lowfire.LowFireConfiguration;
-import io.slizza.lowfire.utils.MathUtil;
+import io.slizza.lowfire.utils.OffsetCalc;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ScreenEffectRenderer;
 import org.spongepowered.asm.mixin.Mixin;
@@ -22,6 +22,6 @@ public abstract class MixinFireRenderer {
 
     if(!config.enabled().get()) return;
 
-    matrices.translate(0.0, MathUtil.calculateFireOffset(config.getFireSize().get()), 0.0);
+    matrices.translate(0.0, OffsetCalc.calculateFireOffset(config.getFireSize().get()), 0.0);
   }
 }

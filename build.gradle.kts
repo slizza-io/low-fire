@@ -16,7 +16,7 @@ labyMod {
         displayName = "Low Fire"
         author = "SLIZZA"
         description = "Lowers the fire overlay on the screen when the player is on fire in first person."
-        minecraftVersion = "1.8.9<1.20.2"
+        minecraftVersion = "1.8.9<1.20.4"
         version = System.getenv().getOrDefault("VERSION", "0.0.1")
     }
 
@@ -31,7 +31,8 @@ labyMod {
                 "1.19.3",
                 "1.19.4",
                 "1.20.1",
-                "1.20.2"
+                "1.20.2",
+                "1.20.4"
         ) { version, provider ->
             configureRun(provider, version)
         }
