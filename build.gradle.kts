@@ -15,7 +15,7 @@ labyMod {
         registerVersion(versions.toTypedArray()) {
             runs {
                 getByName("client") {
-                    devLogin = true
+                    //devLogin = true
                 }
             }
         }
@@ -26,7 +26,7 @@ labyMod {
         displayName = "Low Fire"
         author = "SLIZZA"
         description = "Lowers the fire overlay on the screen when the player is on fire in first person."
-        minecraftVersion = "1.8.9<1.21.1"
+        minecraftVersion = "1.8.9<1.21.5"
         version = rootProject.version.toString()
     }
 }
