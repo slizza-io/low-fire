@@ -6,7 +6,7 @@ plugins {
 val versions = providers.gradleProperty("net.labymod.minecraft-versions").get().split(";")
 
 group = "io.slizza"
-version = providers.environmentVariable("VERSION").getOrElse("1.0.4")
+version = providers.environmentVariable("VERSION").getOrElse("1.0.5")
 
 labyMod {
     defaultPackageName = "io.slizza.lowfire"
@@ -26,7 +26,7 @@ labyMod {
         displayName = "Low Fire"
         author = "SLIZZA"
         description = "Lowers the fire overlay on the screen when the player is on fire in first person."
-        minecraftVersion = "1.8.9<1.21.5"
+        minecraftVersion = "1.8.9<1.21.10"
         version = rootProject.version.toString()
     }
 }
